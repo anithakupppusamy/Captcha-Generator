@@ -81,4 +81,4 @@ This project is open source and available under the MIT License.
 
 **Anitha**
 
-GitHub: https://github.com/anithakuppusamy/
+GitHub: https://github.com/anithakupppusamy
