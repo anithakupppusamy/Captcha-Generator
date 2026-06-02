@@ -14,11 +14,6 @@ https://anithakupppusamy.github.io/Captcha-Generator/
 - Responsive and clean user interface
 - Built with pure HTML, CSS, and JavaScript
 
-## 📸 Preview
-
-<img width="600" alt="Captcha Generator Preview" src="screenshot.png">
-
-> Add a screenshot of your project and save it as `Captcha.png.` in the repository.
 
 ## 🛠️ Technologies Used
 
