@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+</div>
+<div class="container">
+    <div class="left">
+
+        <!-- <div class="arrow">➜</div> -->
+
+        <!-- <h1>Captcha Generator</h1> -->
+
+        <!-- <p>HTML CSS & JavaScript</p> -->
+
+    </div>
+    <div class="box">
+
+        <div class="title">
+            <h3>Captcha Generator</h3>
+        </div>
+
+        <div class="input">
+            <input type="text" id ="abc" readonly>
+            <button onclick="randomCode()"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+        </div>
+
+        <div class="enter">
+            <input type="text" id = "xyz" placeholder="Enter captcha">
+        </div>
+
+        <div class="button">
+            <button onclick="submit()">Submit Captcha</button>
+            <p id ="result"></p>
+        </div>
+
+
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: blueviolet;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        /* .left {
+            color: white;
+        }
+
+        .left h1 {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+
+        .left p {
+            margin-top: 20px;
+            background: white;
+            color: #7b68ee;
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 40px;
+            font-weight: bold;
+        } 
+
+         .arrow {
+            font-size: 160px;
+            transform: rotate(-20deg);
+        } */
+
+        .box {
+            background-color: white;
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            /* transform: rotate(9deg); */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+
+        .input {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input input {
+            width: 100%;
+            height: 65px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding-left: 20px;
+            font-size: 28px;
+            letter-spacing: 10px;
+            color: gray;
+            outline: none;
+        }
+
+        .input button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 8px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+        }
+
+        .enter input {
+            width: 100%;
+            height: 55px;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            border: 1px solid;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .button button {
+            width: 100%;
+            height: 55px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+         
+
+/* Mobile */
+@media (max-width: 480px){
+    .box{
+        padding:20px;
+    }
+
+    .title{
+        font-size:20px;
+    }
+
+    .input input{
+        font-size:20px;
+        letter-spacing:6px;
+        height:55px;
+    }
+
+    .enter input,
+    .button button{
+        height:50px;
+    }
+}
+    </style>
+    <script>
+        function randomCode(){
+            let char="abcdefghijklmnopqrstuvwxyz1234567890";
+            let s = "";
+            for(let i = 0;i < 6; i++){
+                s = s + char[Math.floor(Math.random()*36)];
+            }
+            document.getElementById("abc").value = s;
+        }
+        randomCode();
+
+        function submit(){
+            let val1 = document.getElementById("abc").value;
+            let val2 = document.getElementById("xyz").value;
+            if(val1 == val2){
+                document.getElementById("result").innerHTML="👍🏻Correct";
+            }else{
+                document.getElementById("result").innerHTML="👎🏻Incorrect";
+            }
+        }
+
+
+    </script>
+
+    </body>
+
+    </html>
