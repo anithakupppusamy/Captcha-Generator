@@ -3,6 +3,7 @@
 A simple and responsive CAPTCHA Generator built using **HTML, CSS, and JavaScript**. The application generates a random CAPTCHA code, allows users to refresh it, and validates the entered CAPTCHA against the generated code.
 
 ## 🚀Live Demo
+https://anithakupppusamy.github.io/Captcha-Generator/
 
 ## 🚀 Features
 
